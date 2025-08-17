@@ -60,16 +60,16 @@ public class PrintManager {
                 "Mesa Flexora em Pé", "Good Morning", "Cadeira Flexora"
         ));
         put("Gluteos", Arrays.asList(
-                "GlÃºteo no Cabo", "Hip Thrust", "Agachamento Sumo",
-                "ElevaçãoPÃ©lvica", "Coice no Cabo", "Passada"
+                "Gluteo no Cabo", "Hip Thrust", "Agachamento Sumo",
+                "Elevação Pelvica", "Coice no Cabo", "Passada"
         ));
         put("Panturrilha", Arrays.asList(
-                "Panturrilha em PÃ©", "Panturrilha Sentado",
-                "Panturrilha no Leg Press", "Elevaçãode Panturrilha"
+                "Panturrilha em Pé", "Panturrilha Sentado",
+                "Panturrilha no Leg Press", "Elevação de Panturrilha"
         ));
         put("Adutores/Abdutores", Arrays.asList(
                 "Cadeira Adutora", "Cadeira Abdutora",
-                "AduÃ§Ã£o no Cabo", "AbduÃ§Ã£o no Cabo"
+                "Adução no Cabo", "Abdução no Cabo"
         ));
     }};
 
@@ -156,7 +156,7 @@ public class PrintManager {
             return;
         }
 
-        // Criar o conteÃºdo para impressÃ£o
+        // Criar o conteudo para impressão
         VBox conteudo = criarConteudoImpressao(tipo);
         executarImpressao(conteudo);
     }
@@ -165,7 +165,7 @@ public class PrintManager {
         if (stateManager.getTotalExerciciosCompletados() == 0) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Nenhum Exercicio");
-            alert.setHeaderText("Não há¡ exercicios selecionados!");
+            alert.setHeaderText("Não há exercicios selecionados!");
             alert.setContentText("Selecione exercicios ou uma divisão de treino primeiro.");
             alert.showAndWait();
             return;
@@ -215,7 +215,7 @@ public class PrintManager {
                     job.endJob();
                     mostrarSucessoImpressao();
                 } else {
-                    mostrarErroImpressao("Falha ao imprimir a pÃ¡gina");
+                    mostrarErroImpressao("Falha ao imprimir a pagina");
                 }
             }
         } else {
@@ -247,7 +247,7 @@ public class PrintManager {
         conteudo.getChildren().addAll(titulo, cabecalho);
 
         // Separador
-        Label separador1 = new Label("â”€".repeat(70));
+        Label separador1 = new Label("-".repeat(70));
         separador1.setFont(Font.font("Arial", 7));
         separador1.setStyle("-fx-text-fill: black;");
         separador1.setAlignment(Pos.CENTER);
@@ -268,7 +268,7 @@ public class PrintManager {
         adicionarDiasTreinoComSeries(conteudo, diasTreino);
 
         // Rodape
-        Label separador2 = new Label("â”€".repeat(70));
+        Label separador2 = new Label("-".repeat(70));
         separador2.setFont(Font.font("Arial", 7));
         separador2.setStyle("-fx-text-fill: black;");
         separador2.setAlignment(Pos.CENTER);
@@ -563,7 +563,7 @@ public class PrintManager {
         conteudo.setPadding(new Insets(10));
         conteudo.setStyle("-fx-background-color: white;");
 
-        // CabeÃ§alho compacto
+        // Cabeçalho compacto
         Label titulo = new Label("LISTA DE EXERCICIOS SELECIONADOS");
         titulo.setFont(Font.font("Arial", FontWeight.BOLD, 12));
         titulo.setStyle("-fx-text-fill: black; -fx-underline: true;");
@@ -581,7 +581,7 @@ public class PrintManager {
         conteudo.getChildren().addAll(titulo, cabecalho);
 
         // Separador
-        Label separador1 = new Label("â”€".repeat(60));
+        Label separador1 = new Label("-".repeat(60));
         separador1.setFont(Font.font("Arial", 7));
         separador1.setStyle("-fx-text-fill: black;");
         separador1.setAlignment(Pos.CENTER);
@@ -593,7 +593,7 @@ public class PrintManager {
         adicionarDiasTreinoListagem(conteudo, diasTreino);
 
         // Separador final
-        Label separador2 = new Label("â”€".repeat(60));
+        Label separador2 = new Label("-".repeat(60));
         separador2.setFont(Font.font("Arial", 7));
         separador2.setStyle("-fx-text-fill: black;");
         separador2.setAlignment(Pos.CENTER);
@@ -616,7 +616,7 @@ public class PrintManager {
         for (int i = 0; i < diasTreino.size(); i++) {
             DiaPersonalizado dia = diasTreino.get(i);
 
-            // CabeÃ§alho do dia
+            // cabeçalho do dia
             Label nomeDia = new Label(dia.getNome().toUpperCase());
             nomeDia.setFont(Font.font("Arial", FontWeight.BOLD, 10));
             nomeDia.setStyle("-fx-text-fill: #2196F3; -fx-underline: true;");
@@ -627,7 +627,7 @@ public class PrintManager {
 
             // Separador entre dias (exceto noUltimo)
             if (i < diasTreino.size() - 1) {
-                Label separadorDia = new Label("â–¬".repeat(40));
+                Label separadorDia = new Label("-".repeat(40));
                 separadorDia.setFont(Font.font("Arial", 6));
                 separadorDia.setStyle("-fx-text-fill: #ccc;");
                 separadorDia.setAlignment(Pos.CENTER);
