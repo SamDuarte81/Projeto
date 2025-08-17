@@ -8,7 +8,8 @@
         <VBox alignment="CENTER" prefHeight="700.0" prefWidth="900.0" spacing="20.0" style="-fx-background-color: linear-gradient(to bottom, #e0f2fe, #ffffff);">
             <children>
 
-                <Label style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: #6366f1;" text="Nome Do Programa" />
+                <Label style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: #6366f1;" text="Make Muscle" />
+                <Label style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #6366f1;" text="Ficha de Treino" />
 
 
                 <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #4f46e5;" text="LOGIN" />
