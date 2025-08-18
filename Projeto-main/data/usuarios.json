@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "primeiroNome": "João",
+    "sobrenome": "Silva",
+    "email": "treinador@gym.com",
+    "senha": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "tipo": "TREINADOR",
+    "dataCriacao": "2025-08-15T16:24:48.819491",
+    "ativo": true
+  },
+  {
+    "id": 2,
+    "primeiroNome": "Maria",
+    "sobrenome": "Santos",
+    "email": "cliente@email.com",
+    "senha": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "tipo": "CLIENTE",
+    "dataCriacao": "2025-08-15T16:24:48.8461243",
+    "ativo": true
+  },
+  {
+    "id": 3,
+    "primeiroNome": "Emerson",
+    "sobrenome": "Silva",
+    "email": "emerson@outlook.com",
+    "senha": "5dae947c0fc0b94efd432e89cccaaaca1cf16081dd67d7c586a81ad260fe8eaf",
+    "tipo": "TREINADOR",
+    "dataCriacao": "2025-08-15T16:25:17.2501813",
+    "ativo": true
+  },
+  {
+    "id": 4,
+    "primeiroNome": "juninho",
+    "sobrenome": "play",
+    "email": "juninhoplay@outlook.com",
+    "senha": "5dae947c0fc0b94efd432e89cccaaaca1cf16081dd67d7c586a81ad260fe8eaf",
+    "tipo": "TREINADOR",
+    "dataCriacao": "2025-08-16T09:23:18.4060943",
+    "ativo": true
+  },
+  {
+    "id": 5,
+    "primeiroNome": "Carlos",
+    "sobrenome": "Silva",
+    "email": "carlos@outlook.com",
+    "senha": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+    "tipo": "TREINADOR",
+    "dataCriacao": "2025-08-16T15:17:01.8833382",
+    "ativo": true
+  },
+  {
+    "id": 6,
+    "primeiroNome": "carlos",
+    "sobrenome": "silva",
+    "email": "carloss@outlook.com",
+    "senha": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "tipo": "TREINADOR",
+    "dataCriacao": "2025-08-16T15:35:40.714406",
+    "ativo": true
+  },
+  {
+    "id": 7,
+    "primeiroNome": "Samuel",
+    "sobrenome": "Duarte",
+    "email": "claudiolima8119@gmail.com",
+    "senha": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "tipo": "TREINADOR",
+    "dataCriacao": "2025-08-17T18:57:38.8176988",
+    "ativo": true
+  },
+  {
+    "id": 8,
+    "primeiroNome": "Claudio",
+    "sobrenome": "Lima",
+    "email": "samuelduarte1895@gmail.com",
+    "senha": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "tipo": "TREINADOR",
+    "dataCriacao": "2025-08-17T19:04:59.7993527",
+    "ativo": true
+  },
+  {
+    "id": 9,
+    "primeiroNome": "Claudio",
+    "sobrenome": "Lima",
+    "email": "samuel@gmail.com",
+    "senha": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "tipo": "CLIENTE",
+    "dataCriacao": "2025-08-17T19:06:18.9738196",
+    "ativo": true
+  }
+]
