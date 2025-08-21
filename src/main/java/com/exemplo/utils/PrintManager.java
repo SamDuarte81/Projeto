@@ -461,7 +461,7 @@ public class PrintManager {
 
             // Separador entre dias (exceto no ultimo)
             if (i < diasTreino.size() - 1) {
-                Label separadorDia = new Label("â–¬".repeat(50));
+                Label separadorDia = new Label("--".repeat(50));
                 separadorDia.setFont(Font.font("Arial", 7));
                 separadorDia.setStyle("-fx-text-fill: #ccc;");
                 separadorDia.setAlignment(Pos.CENTER);
@@ -529,7 +529,7 @@ public class PrintManager {
             HBox exercicioLinha = new HBox(8);
             exercicioLinha.setAlignment(Pos.CENTER_LEFT);
 
-            Label nomeExercicio = new Label("â€¢ " + exercicio);
+            Label nomeExercicio = new Label(" " + exercicio);
             nomeExercicio.setFont(Font.font("Arial", 7));
             nomeExercicio.setStyle("-fx-text-fill: black;");
             nomeExercicio.setPrefWidth(140);

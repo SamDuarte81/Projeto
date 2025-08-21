@@ -114,7 +114,7 @@
                 <!-- Card de dica -->
                 <HBox alignment="CENTER" spacing="10" style="-fx-background-color: #eff6ff; -fx-background-radius: 10; -fx-padding: 12 20 12 20; -fx-border-color: #dbeafe; -fx-border-radius: 10; -fx-border-width: 1;">
                     <children>
-                        <Label text="💡" style="-fx-font-size: 16px;" />
+
                         <Label text="Dica: Use as divisões de treino para seleções rápidas!" style="-fx-text-fill: #1e40af; -fx-font-size: 13px; -fx-font-weight: bold;">
                             <font>
                                 <Font name="System Bold" size="13.0" />

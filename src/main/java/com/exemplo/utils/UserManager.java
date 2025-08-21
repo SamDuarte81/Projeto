@@ -47,7 +47,7 @@ public class UserManager {
 
         // Verificar se email já existe
         if (usuarios.containsKey(email)) {
-            System.out.println("Email já; cadastrado: " + email);
+            System.out.println("Email já cadastrado: " + email);
             return false;
         }
 
