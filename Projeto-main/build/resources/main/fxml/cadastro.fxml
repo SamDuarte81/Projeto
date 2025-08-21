@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exemplo.controllers.CadastroController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="700.0" prefWidth="900.0" spacing="15.0" style="-fx-background-color: linear-gradient(to bottom, #e0f2fe, #ffffff);">
+            <children>
+
+                <Label style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: #6366f1;" text="Nome Do Programa" />
+
+
+                <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #4f46e5;" text="CADASTRO" />
+
+                <!-- Tipo de usuário -->
+                <HBox alignment="CENTER" spacing="20.0">
+                    <children>
+                        <RadioButton fx:id="treinadorCadastroRadio" selected="true" style="-fx-font-size: 14px;" text="Treinador">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="userTypeCadastroGroup" />
+                            </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="clienteCadastroRadio" style="-fx-font-size: 14px;" text="Cliente" toggleGroup="$userTypeCadastroGroup" />
+                    </children>
+                </HBox>
+
+                <!-- Campos do formulário -->
+                <VBox alignment="CENTER" maxWidth="300.0" spacing="12.0">
+                    <children>
+
+                        <HBox alignment="CENTER_LEFT" spacing="10.0" style="-fx-background-color: #e5e7eb; -fx-background-radius: 8; -fx-padding: 12;">
+                            <children>
+                                <Label style="-fx-text-fill: #6b7280;" text="👤" />
+                                <TextField fx:id="firstNameField" promptText="Primeiro nome" style="-fx-background-color: transparent; -fx-border-color: transparent;" />
+                            </children>
+                        </HBox>
+
+
+                        <HBox alignment="CENTER_LEFT" spacing="10.0" style="-fx-background-color: #e5e7eb; -fx-background-radius: 8; -fx-padding: 12;">
+                            <children>
+                                <Label style="-fx-text-fill: #6b7280;" text="👤" />
+                                <TextField fx:id="lastNameField" promptText="Sobrenome" style="-fx-background-color: transparent; -fx-border-color: transparent;" />
+                            </children>
+                        </HBox>
+
+
+                        <HBox alignment="CENTER_LEFT" spacing="10.0" style="-fx-background-color: #e5e7eb; -fx-background-radius: 8; -fx-padding: 12;">
+                            <children>
+                                <Label style="-fx-text-fill: #6b7280;" text="📧" />
+                                <TextField fx:id="emailCadastroField" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: transparent;" />
+                            </children>
+                        </HBox>
+
+
+                        <HBox alignment="CENTER_LEFT" spacing="10.0" style="-fx-background-color: #e5e7eb; -fx-background-radius: 8; -fx-padding: 12;">
+                            <children>
+                                <Label style="-fx-text-fill: #6b7280;" text="🔒" />
+                                <PasswordField fx:id="passwordCadastroField" promptText="Senha" style="-fx-background-color: transparent; -fx-border-color: transparent;" />
+                                <TextField fx:id="passwordCadastroVisible" promptText="Senha" style="-fx-background-color: transparent; -fx-border-color: transparent;" managed="false" visible="false" />
+                                <Button fx:id="togglePasswordCadastroBtn" onAction="#togglePasswordCadastroVisibility" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="👁" />
+                            </children>
+                        </HBox>
+
+
+                        <HBox alignment="CENTER_LEFT" spacing="10.0" style="-fx-background-color: #e5e7eb; -fx-background-radius: 8; -fx-padding: 12;">
+                            <children>
+                                <Label style="-fx-text-fill: #6b7280;" text="🔒" />
+                                <PasswordField fx:id="confirmPasswordField" promptText="Confirme a senha" style="-fx-background-color: transparent; -fx-border-color: transparent;" />
+                                <TextField fx:id="confirmPasswordVisible" promptText="Confirme a senha" style="-fx-background-color: transparent; -fx-border-color: transparent;" managed="false" visible="false" />
+                                <Button fx:id="toggleConfirmPasswordBtn" onAction="#toggleConfirmPasswordVisibility" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="👁" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+
+                <!-- Botões -->
+                <HBox alignment="CENTER" spacing="20.0">
+                    <children>
+                        <Button fx:id="cancelBtn" onAction="#handleCancel" prefWidth="120.0" style="-fx-background-color: #6b7280; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 8; -fx-padding: 10;" text="Cancelar" />
+                        <Button fx:id="cadastrarBtn" onAction="#handleCadastro" prefWidth="120.0" style="-fx-background-color: #6366f1; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 8; -fx-padding: 10;" text="Continue" />
+                    </children>
+                </HBox>
+
+                <!-- Link para login -->
+                <Label fx:id="switchToLoginLink" style="-fx-text-fill: #6366f1; -fx-underline: true; -fx-cursor: hand;" text="Login" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'com.exemplo'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_19
+    targetCompatibility = JavaVersion.VERSION_19
+}
+
+javafx {
+    version = '22.0.2'
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+application {
+    mainClass = 'com.exemplo.Main'
+}
+
+run {
+    jvmArgs = [
+            '--add-opens', 'javafx.fxml/javafx.fxml=ALL-UNNAMED',
+            '--add-opens', 'java.base/java.lang.reflect=ALL-UNNAMED',
+            '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
+            '--add-exports', 'javafx.graphics/com.sun.javafx.application=ALL-UNNAMED'
+    ]
+}
+dependencies {
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    // Outras dependências comuns que você pode ter:
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+// Configurações adicionais para compatibilidade
+tasks.withType(JavaCompile) {
+    options.compilerArgs += [
+            '--add-opens', 'java.base/java.lang=ALL-UNNAMED'
+    ]
+}
